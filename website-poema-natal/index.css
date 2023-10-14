@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Cantarell";
+    src: url("./fonts/Cantarell-VF.woff2") format("woff2"),
+      url("./fonts/Cantarell-VF.otf") format("opentype");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+*, *::after, *::before {
+    --animation-delay: 0.2s;
+    box-sizing: border-box;
+    -moz-transition: all var(--animation-delay) ease-in-out;
+    -webkit-transition: all var(--animation-delay) ease-in-out;
+    -moz-transition: all var(--animation-delay) ease-in-out;
+    -o-transition: all var(--animation-delay) ease-in-out;
+    transition: all var(--animation-delay) ease-in-out;
+}
+
+body {
+    margin: 2vmax;
+}
+
+article {
+    display: inline-flex;
+}
+
+article img {
+    max-width: 25%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+figure {
+    max-width: 100%;
+    width: 100%;
+    font-family: "Cantarell";
+    text-align: left;
+}
+
+figure h1 {
+    font-weight: 900;
+}
+
+figure p {
+    line-height: 1em;
+}
+
+figcaption {
+    font-weight: 900;
+}
+
+@media (orientation:landscape) {
+    figure {
+        font-size: 4vh;
+    }
+}
+ 
+@media (orientation:portrait) {
+    figure {
+        font-size: 4vw;
+    }
+}
+ 
